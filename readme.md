@@ -6,21 +6,21 @@
 
 * User Impact
 * Parts which need the most help
+* Site owner
 
 ### CSS/Front-end Framework chosen by:
 
 * Whats pleasant to work with
 * What displays the best
+* Site owner
 
-### Note these images were capped at 33% zoom in chrome on a 1920x1080 screen
+#### Which route I plan to use:
 
+* https://www.icanhazchat.com/$room
 
-![Get Hearted](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/GetHearted.png)
-##### *Get Hearted*
+#### Priority of Frameworks
 
-![Get Hearted Plan](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/GetHearted-Plan.png)
-##### *Get Hearted Plan*
-
-![Get Hearted Plan Selected](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/GetHearted-Plan-Selected.png)
-##### *Get Hearted Plan Selected*
-#### This page had un-used whitespace on the bottom
+1. Foundation
+2. Bootstrap
+3. PureCSS
+4. Bulma
