@@ -13,9 +13,14 @@
 * What displays the best
 
 ### Note these images were capped at 33% zoom in chrome on a 1920x1080 screen
+
+
 ![Get Hearted](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/GetHearted.png)
+##### *Get Hearted*
 
-![Get Hearted](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/GetHearted-Plan.png)
+![Get Hearted Plan](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/GetHearted-Plan.png)
+##### *Get Hearted Plan*
 
-#### This page has un-used whitespace on the bottom
-![Get Hearted](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/GetHearted-Plan-Selected.png)
+![Get Hearted Plan Selected](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/GetHearted-Plan-Selected.png)
+##### *Get Hearted Plan Selected*
+#### This page had un-used whitespace on the bottom
