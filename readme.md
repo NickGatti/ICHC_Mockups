@@ -24,3 +24,14 @@
 2. Bootstrap
 3. PureCSS
 4. Bulma
+
+### Mockup route capped in chrome at 100% zoom
+
+![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Full.png)
+##### *Full widith room*
+
+![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Post-Break-Point.png)
+##### *Room Pre-Breakpoint*
+
+![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Post-Break-Point.png)
+##### *Room Post-Breakpoint*
