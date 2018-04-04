@@ -27,11 +27,11 @@
 
 ### Mockup route capped in chrome at 100% zoom
 
-![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Full.png)
+![Full Witdth](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Full.png)
 ##### *Full widith room*
 
-![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Pre-Break-Point.png)
+![Pre-BreakPoint](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Pre-Break-Point.png)
 ##### *Room Pre-Breakpoint*
 
-![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Post-Break-Point.png)
+![Post-BreakPoint](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Post-Break-Point.png)
 ##### *Room Post-Breakpoint*
