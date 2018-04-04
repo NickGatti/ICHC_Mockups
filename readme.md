@@ -30,7 +30,7 @@
 ![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Full.png)
 ##### *Full widith room*
 
-![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Post-Break-Point.png)
+![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Pre-Break-Point.png)
 ##### *Room Pre-Breakpoint*
 
 ![text](https://github.com/NickGatti/ICHC_Mockups/raw/master/img/Room-Post-Break-Point.png)
