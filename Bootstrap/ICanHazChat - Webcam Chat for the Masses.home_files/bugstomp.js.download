@@ -1,0 +1,102 @@
+
+function bugstomp(who, dev, project) {
+
+  var o=document.getElementById('bugstomp');if(!o)return;
+  o.style.display = 'none';
+
+  o=document.getElementById('bugstomp_popup');
+  if(o) {
+    o.style.display = 'block';
+    o = document.getElementById('bugstomp_what'); if (o) o.focus();
+    return;
+  }
+
+  var d = document.createElement("div");
+  d.className += 'bugstomp_popup';
+  d.id = 'bugstomp_popup';
+  d.style.zIndex = 1000;
+
+  // BUGBUG - if no 'who' provided then optionally prompt the end user for an email address
+
+  var s = "<b style='color:black;padding-left:6px;'>My Feedback:</b><form><textarea ID='bugstomp_what' value='' ></textarea><br />" + 
+    "<table width='100%'><tr><td width='50%'><a href='http://www.bugstomp.com' target='_blank' style='color:#aaa;padding-left:6px;'>bugstomp</a></td><td width='50%' align='right'>" + 
+      "<input type='button' value='submit' class='btn btn-primary' onclick='javascript:bugstomp_submit();' /> &nbsp; " +
+      "<input type='button' value='cancel' class='btn' onclick='javascript:bugstomp_close(1);' />" +
+      "</td></tr></table>" +
+    "<input value='" + who + "' id='bugstomp_who' type='hidden' />" + 
+    "<input value='" + dev + "' id='bugstomp_dev' type='hidden' />" + 
+    "<input value='" + project + "' id='bugstomp_project' type='hidden' />" + 
+    "</form>";
+
+  d.innerHTML = s;
+  document.body.appendChild(d);
+  o = document.getElementById('bugstomp_what'); if (o) o.focus();
+}
+
+function bugstomp_submit() {
+
+      data = "";
+      data.url = document.location.href;
+      var o=document.getElementById('bugstomp_who');
+      data += "who=" + o.value + "&";
+      o=document.getElementById('bugstomp_dev');
+      data += "dev=" + o.value + "&";
+      o=document.getElementById('bugstomp_project');
+      data += "project=" + o.value + "&";
+      o=document.getElementById('bugstomp_what');
+      data += "text=" + o.value;
+      o.value = '';
+
+    //alert(data);
+
+    var request = new XMLHttpRequest();
+
+    request.onload = function () {
+        if (request.status >= 200 && request.status < 400) {
+            // Success!
+            var o = document.getElementById('bugstomp_what');
+            if (o) o.value = '';
+            alert("Thanks for the feedback!");
+        } else {
+            // We reached our target server, but it returned an error
+        }
+    };
+
+    request.onerror = function () {
+        // There was a connection error of some sort
+    };
+
+    request.open('POST', 'https://www.imssr.com/upload.ashx?what=bugstomp', true);
+    //request.open('POST', 'http://localhost:52109/upload.ashx?what=bugstomp', true);
+    request.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded; charset=UTF-8');
+
+    request.setRequestHeader('Content-Type', 'application/json; charset=UTF-8');
+
+    request.send(data);
+
+    /* */
+    bugstomp_close(0);
+}
+
+function bugstomp_thanks() {
+}
+
+function bugstomp_close(reshow) {
+  var o=document.getElementById('bugstomp_popup');
+  o.style.display = 'none';
+  if (reshow) {
+    o=document.getElementById('bugstomp');if(!o)return;
+    o.style.display = 'block';
+  }
+}
+
+(function () {
+  var o=document.getElementById('bugstomp');
+  if(!o) return;
+  var f=o.innerHTML.split(',');if(f.length!=3)return;
+  o.setAttribute("onclick", "bugstomp('"+f[0]+"','"+f[1]+"','"+f[2]+"');");
+  o.innerHTML = "Feedback";
+  o.style.display = "block";
+})();
+
+
